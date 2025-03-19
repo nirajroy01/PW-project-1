@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Valley - Book Page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgoldenrodyellow;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .book-container {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-container img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #d32f2f;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .discount {
+            background: green;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .preorder {
+            background: orange;
+            color: white;
+        }
+
+        .add-to-cart {
+            background: #007BFF;
+            color: white;
+        }
+
+        .rating {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        
+
+        @media (max-width: 600px) {
+            .book-container, .details {
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="header w-100 p-2 d-flex justify-content-between">
+            <span>
+                <h2 style="padding-top: 12px; font-weight: bold;">Book Showcase</h2>
+            </span>
+            
+            <span>
+                <button type="button" class="btn btn-danger me-4"><a href="index.html" class="text-light ps-3 pe-3" style="text-decoration: none;">Back</a></button>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <div class="book-container">
+            <img src="../public/images/book3.jpeg" alt="AI Valley Book Cover">
+            <h1>The Laws of Human Nature</h1>
+            <h2>Understanding and Mastering the Nature of Human Behavior</h2>
+            <h3>By Robert Greene</h3>
+            <p class="publisher">Publisher:  HACHETTE BOOK PUBLISHING INDIA PVT.LTD</p>
+            <p class="price">₹799 <span class="old-price">₹999</span> <span class="discount">22% OFF</span></p>
+            <p class="availability">Availability: Available</p>
+            <div class="buttons">
+                <button class="preorder">Buy Now</button>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="rating">
+            <h3>Rating and Reviews</h3>
+            <p>4.6 / 5</p>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-half"></span>
+        </div>
+
+        
+
+        <div class="accordion mt-4 w-75" id="faqs" style="margin-left: 13%;">
+
+            <div class="accordion-item mt-3">
+    
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button bg-danger w-100 text-white" data-bs-toggle="collapse" data-bs-target="#faq1">ABOUT THE BOOK</button>
+                </div>
+    
+                <div class="accordion-collapse collapse" id="faq1" data-bs-parent="#faqs">
+                    <div class="accordion-body">
+                        <p>
+                            WINNER OF THE INTERNATIONAL BUSINESS BOOK AWARD 2019 Robert Greene is a master guide for millions of readers, 
+                            distilling ancient wisdom and philosophy into essential texts for seekers of power, understanding and mastery.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="accordion-item mt-3">
+    
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button bg-danger w-100 text-white" data-bs-toggle="collapse" data-bs-target="#faq2">ABOUT THE AUTHOR</button>
+                </div>
+    
+                <div class="accordion-collapse collapse" id="faq2" data-bs-parent="#faqs">
+                    <div class="accordion-body">
+                        <h2>By Robert Greene</h2>
+                         <p>
+                            Robert Greene, the #1 New York Times bestselling author of The 48 Laws of Power, The 33 Strategies of War, The Art of Seduction and Mastery 
+                            (all published by Profile) is an internationally renowned expert on power strategies. He lives in Los Angeles.
+
+                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item mt-3">
+    
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button bg-danger w-100 text-white" data-bs-toggle="collapse" data-bs-target="#faq3">PRODUCT SPECIFICATIONS</button>
+                </div>
+    
+                <div class="accordion-collapse collapse" id="faq3" data-bs-parent="#faqs">
+                    <div class="accordion-body">
+                         <p class="text-black">Publication Year: 2018</p>
+                         <p class="text-black">Binding: Hardcover</p>
+                         <p class="text-black">Number of Pages: 600 Pages</p>
+                         <p class="text-black">Language: (English)</p>
+                         <p class="text-black">Dimensions (Cms): 23.5 x 16.5 x 5.6</p>
+                         <p class="text-black">Weight (grms): 1100</p>
+                         
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item mt-3">
+    
+                <div class="accordion-header">
+                    <button type="button" class="accordion-button bg-danger w-100 text-white" data-bs-toggle="collapse" data-bs-target="#faq4">BUY FROM OTHER SITE</button>
+                </div>
+    
+                <div class="accordion-collapse collapse" id="faq4" data-bs-parent="#faqs">
+                    <div class="accordion-body">
+                        <a href="https://www.amazon.in/s?k=the+laws+of+human+nature+book&i=stripbooks&crid=2KRVH05OO5SW4&sprefix=The+Laws+of+Human+Nature%2Cstripbooks%2C257&ref=nb_sb_ss_ts-doa-p_2_24"><span>Amazon</span></a>
+                        <br>
+                        <a href="https://www.flipkart.com/laws-human-nature/p/itmfbea48e07bb48"><span>Flipkart</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="bg-light w-75  pt-3 mt-4 rounded-3" style="margin-left: 13%;">
+            <div class="w-100">
+              <h3 class="text-center text-danger">FeedBack:</h3>
+        
+              <div class="d-flex justify-content-center">
+                <div class="feedback1">
+                  <label for="" class="form-check-label text-secondary">Email</label>
+                  <input type="email" class="form-control"><br>
+                  <textarea class="w-100 form-control" placeholder="Share Your Valuable FeedBack with Us"></textarea>
+                  <button type="button" class="btn btn-warning mt-2 mb-3">Send</button>
+                </div>
+              </div>
+            </div>
+            
+            <p class="p-3 text-center text-white bg-dark mb-2">All Rights Reserved</p>
+            
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></body>
+</html>
